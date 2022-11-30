@@ -1,3 +1,14 @@
+"""
+Download stock prices data from 2011-01-01 to 2019-12-31 for specific stocks
+and save it to file: "stock_data.csv".
+
+Example usage:
+python download.py AMZN AAPL BAC
+
+-> Downloads the stock data of the tickers AMZN, AAPL and BAC.
+"""
+
+
 import yfinance as yf
 import sys
 
