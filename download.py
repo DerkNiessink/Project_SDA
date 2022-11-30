@@ -16,7 +16,7 @@ import sys
 def download(tickers: str):
 
     df = yf.download(tickers, start="2011-01-01", end="2019-12-31", group_by="ticker")
-    df.to_csv("stock_data.csv")
+    df.to_csv("Data/stock_data.csv")
 
 
 if __name__ == "__main__":
