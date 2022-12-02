@@ -1,28 +1,19 @@
 """
-Download stock prices data from 2011-01-01 to 2019-12-31 for specific stocks
-and save it to file: "stock_data.csv".
+Download the project datafiles from Google Drive.
 
-Example usage:
-python download.py AMZN AAPL BAC
-
--> Downloads the stock data of the tickers AMZN, AAPL and BAC.
+    -> files will be saved in a new folder: "data".
 """
 
-
-import yfinance as yf
-import sys
-
-
-def download(tickers: str):
-
-    df = yf.download(tickers, start="2011-01-01", end="2019-12-31", group_by="ticker")
-    df.to_csv("Data/stock_data.csv")
+import gdown
+import tarfile
+import os
 
 
-if __name__ == "__main__":
+url = "https://drive.google.com/uc?id=1V3EY5weHjTZN-oEcdu6b90X4-SHCJRk3"
 
-    ticker_string = ""
-    for i in range(1, len(sys.argv)):
-        ticker_string += f" {sys.argv[i]}"
+fn = "data.tar.gz"
+gdown.download(url, fn)
 
-    download(ticker_string)
+file = tarfile.open(fn)
+file.extractall(".")
+os.remove("data.tar.gz")
