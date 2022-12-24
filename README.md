@@ -9,7 +9,7 @@
 
 May `download.py` malfunction for some reason, the data can be downloaded and extracted to this folder from the drive directly: https://drive.google.com/file/d/1FgmJXkv6Xo0JWJtslu1ZNL3urH6SlodU/view?usp=sharing.
 
-## Files
+## Structure
 
 The src folder contains all the code of the analysis. All files py/ipynb can be run separately.
 
