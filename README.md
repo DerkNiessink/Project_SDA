@@ -42,4 +42,7 @@ The src folder contains all the code of the analysis. All files py/ipynb can be 
 * `H0B`
 >
 
+For more information about the analysis, please take a look at the presentation slides:
+https://docs.google.com/presentation/d/1Gh-xMdgrWdgvud9PWHqU0W2k2CJ1teHg/edit?usp=sharing&ouid=112006383612537603453&rtpof=true&sd=true
+
 
