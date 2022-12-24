@@ -11,7 +11,21 @@ May `download.py` malfunction for some reason, the data can be downloaded and ex
 
 ## Files
 
-The src folder contains all the code of the analysis. All files can be run separately.
+The src folder contains all the code of the analysis. All files py/ipynb can be run separately.
+
+.
+├── requirements.txt
+├── README.md
+├── data               # Constructed after running `download.py`
+├── download.py
+└── src
+    ├── Stock Timeseries.ipynb
+    ├── Sentiment Analysis.ipynb
+    ├── VAR.ipynb
+    ├── AR and H0A.ipynb
+    └── H0B.ipynb
+
+## Analysis
 
 * `Stock Timeseries`
 ->
@@ -26,6 +40,6 @@ The src folder contains all the code of the analysis. All files can be run separ
 -> Prediction of stock prices using an Autoregressive Model (AR) and comparison with the VAR to test hypothesis H0A.
 
 * `H0B`
-->
+-> 
 
 
