@@ -20,6 +20,7 @@ The src folder contains all the code of the analysis. All py/ipynb files can be 
     ├── download.py
     └── src
         ├── Stock Timeseries.ipynb
+        ├── Sentiment Timeseries.ipynb
         ├── Sentiment Analysis.ipynb
         ├── VAR.ipynb
         ├── AR and H0A.ipynb
@@ -29,6 +30,10 @@ The src folder contains all the code of the analysis. All py/ipynb files can be 
 
 * `Stock Timeseries`
 >
+
+* `Sentiment Timeseries`
+> Data cleaning of the sentiment, generation of a sentiment timeseries per stock and making the timeseries stationary by taking differences
+and executing Augmented Dickey-Fuller (ADF) tests.
 
 * `Sentiment Analysis`
 >
