@@ -31,6 +31,7 @@ The src folder contains all the code of the analysis. All py/ipynb files can be 
 ### Hypotheses
 H0A:
 > There is no relationship between sentiment about a stock in news articles and this stock's price movements.
+
 H0B:
 > Future stock price predictions can not be improved by including news article sentiment about this stock as a predictor
 
