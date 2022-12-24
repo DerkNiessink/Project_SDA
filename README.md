@@ -11,7 +11,7 @@ May `download.py` malfunction for some reason, the data can be downloaded and ex
 
 ## Structure
 
-The src folder contains all the code of the analysis. All files py/ipynb can be run separately.
+The src folder contains all the code of the analysis. All py/ipynb files can be run separately.
 
     .
     ├── requirements.txt
