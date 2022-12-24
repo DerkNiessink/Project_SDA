@@ -9,7 +9,7 @@ import tarfile
 import os
 
 
-url = "https://drive.google.com/uc?id=1FgmJXkv6Xo0JWJtslu1ZNL3urH6SlodU"
+url = "https://drive.google.com/uc?id=1lAKSWgnMmN5spAybEbwXBvHYlukM_8Od"
 
 fn = "data.tar.gz"
 gdown.download(url, fn)
