@@ -13,8 +13,6 @@ May `download.py` malfunction for some reason, the data can be downloaded and ex
 
 The src folder contains all the code of the analysis. All files py/ipynb can be run separately.
 
-### Directory layout
-
     .
     ├── requirements.txt
     ├── README.md
