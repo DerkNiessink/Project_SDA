@@ -40,14 +40,14 @@ A Dataset of financial newpaper articles with including content was used in conj
 
 15 stocks with the most articles and a top 50 market capitalization were selected.
 Sentiment scores were assigned to the articles an automatic dictionary approach, manually validated, and the dictionary sentiment prediction was found to be significantly different from the manual labeling.
-However, the dictionairy based sentiment scores were found to be significantly correlated to the manual sentiment scores, so the analysis was proceded with.
+However, the dictionary based sentiment scores were found to be significantly correlated to the manual sentiment scores, so the analysis was proceeded with.
 
-To obtain a sentiment timeseries, the sum of the articles sentiment was multiplied by the mean sentiment score of all articles (on a range of -1 for most negative, 1 for most positive) to obtain a sentiment score per day.
+To obtain a sentiment timeseries, the sum of the articles sentiment (value in between the range of -1 and 1) was taken per day. 
 On days where no articles were published, the value of the previous sentiment datapoint was imputed.
 After (percentage) differencing most price and sentiment timeseries were confirmed to be stationairy using ADF tests, implying a constant mean and variance of the timeseries over time. 
 
-Optimum lag order was chosen using the AIC.
-Using a VAR model, a  significant historical relationship was established in ... of the stocks, rejecting Hypothesis H0A and thus supporting H1A.
+Optimum lag order was chosen using the AIC (Aikake Information Criterion).
+Using a VAR model, a significant historical relationship was established for the prices of the stocks, rejecting Hypothesis H0A and thus supporting H1A.
 Subsequently, the prices of these 15 stocks were forecasted 12 days in the future with a VAR fitted on using sentiment and stock price as predictors, 
 and compared with a baseline of Autoregressive Model (AR) using only the lagged values of the stock price as predictors. To optimize the predition, the timeseries was split into 19 (non-overlapping) windows 
 and seperate VAR and AR models were trained on each. The mean prediction was then used to do the forecasting. AR was fitted with the same number of lags as the VAR to form a representative baseline.
@@ -59,14 +59,11 @@ Residuals were plotted to look for a systematic patern in the errors, but clear 
 When (V)AR assumptions were tested, the normality of residuals and constant variance over time were the assumptions failed most often and for some windows, across windows, strong stationarity held for some but was violated for others.
 Limitations of this research were: failed assumptions, only a single forcast window, possible omitted variable bias, and ofcourse the assumption that what was true in the past will hold in the future. 
 Also the fact that the VAR model uses insignificant coefficients to do the forecasting could have limited prediction accuracy. 
-Another limitation was that the sentiment validation indicated that the automatic labeling of the articles was significantly different (although correlated to) the manual labeling.'
+Another limitation was that the sentiment validation indicated that the automatic labeling of the articles was significantly different (although correlated to) the manual labeling. When moving p (the lag order) steps out of sample, VAR model also predicts the next days sentiment, based on its previous predictions. Possibly the model could be improved if it was given actual sentiment as an input data instead.
 
-When moving p (the lag order) steps out of sample, VAR model also predicts the next days sentiment, based on its previous predictions. 
-Possibly the model could be improved if it was given actual sentiment as an input data instead.
 Summarizing the findings, a significant historical bidirectional relationship between price and sentiment was found using the VAR model, 
 however the forecasts of the VAR model including sentiment coefficients performed significantly worse than a baseline AR model using sentiment alone.
 Placing the findings in context of previous research,
-
 
 ### Files
 
