@@ -70,17 +70,6 @@ This could be due to better sentiment classification using this finance domain-s
 Also, as assumptions were violated, it seems that the VAR model simply was not a right fit for the data.
 
 
-[1]Li, X., Wu, P., & Wang, W. (2020). Incorporating stock prices and news sentiments for stock market prediction: A case of Hong Kong. Information Processing & Management, 57(5), 102212. https://www.sciencedirect.com/science/article/abs/pii/S0306457319307952
-
-
-[2] Fazlija, B., & Harder, P. (2022). Using Financial News Sentiment for Stock Price Direction Prediction. Mathematics, 10(13), 2156.
-https://www.mdpi.com/2227-7390/10/13/2156
-
-
-
-
-
-
 ## Files
 
 * `Stock Timeseries`
@@ -116,6 +105,11 @@ https://pypi.org/project/yfinance/
 Twitter data (did not use in the end):
 https://www.kaggle.com/datasets/kazanova/sentiment140
 https://www.kaggle.com/datasets/utkarshxy/stock-markettweets-lexicon-data
+
+[1]Li, X., Wu, P., & Wang, W. (2020). Incorporating stock prices and news sentiments for stock market prediction: A case of Hong Kong. Information Processing & Management, 57(5), 102212. https://www.sciencedirect.com/science/article/abs/pii/S0306457319307952
+
+[2] Fazlija, B., & Harder, P. (2022). Using Financial News Sentiment for Stock Price Direction Prediction. Mathematics, 10(13), 2156.
+https://www.mdpi.com/2227-7390/10/13/2156
 
 
 
