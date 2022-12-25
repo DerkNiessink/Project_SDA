@@ -39,7 +39,7 @@ During this project, timeseries analysis of historical prices and news article s
 A Dataset of financial newpaper articles with including content was used in conjunction with (close) stock prices from Yahoo finance, on a (business) daily basis over a period from 2014 to 2019.
 
 15 stocks with the most articles and a top 50 market capitalization were selected.
-Sentiment scores were assigned to the articles an automatic dictionairy approach, manually validated, and the dictionairy sentiment prediction was found to be significantly different from the manual labeling.
+Sentiment scores were assigned to the articles an automatic dictionary approach, manually validated, and the dictionary sentiment prediction was found to be significantly different from the manual labeling.
 However, the dictionairy based sentiment scores were found to be significantly correlated to the manual sentiment scores, so the analysis was proceded with.
 
 To obtain a sentiment timeseries, the sum of the articles sentiment was multiplied by the mean sentiment score of all articles (on a range of -1 for most negative, 1 for most positive) to obtain a sentiment score per day.
