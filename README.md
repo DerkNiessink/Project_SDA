@@ -84,22 +84,22 @@ https://www.mdpi.com/2227-7390/10/13/2156
 ## Files
 
 * `Stock Timeseries`
-> Data cleaning of the stock price data, generation of a sentiment timeseries per stock and making the timeseries stationary by taking percentage differences and testing for stationarity by executing Augmented Dickey-Fuller (ADF) tests.
+> Data cleaning of the stock price data, generation of a sentiment timeseries per stock and making the timeseries stationary by taking percentage differences and testing for stationarity by executing Augmented Dickey-Fuller (ADF) tests. Also, VAR forecasting for 1 stock ('AAPL') is tested.
 
 * `Sentiment Timeseries`
 > Data cleaning of the sentiment, generation of a sentiment timeseries per stock and making the timeseries stationary by taking differences and testing for stationarity by executing Augmented Dickey-Fuller (ADF) tests.
 
 * `Sentiment Analysis`
-> 
+> Here the sentiment in news articles is analysed by a dictionairy based method. Then it is manually validated.
 
 * `VAR`
-> Prediction of the stock prices using a Vector Autoregressive Model (VAR), with stock price and sentiment as variables. Including assumption VAR tests.
+> Prediction of the stock prices using a Vector Autoregressive Model (VAR), with stock price and sentiment as variables. Including assumption VAR tests. The RMSE's of this predictions are used in `AR and H0B`
 
 * `AR and H0B`
 > Prediction of stock prices using an Autoregressive Model (AR) and comparison with the Vector Autoregressive Model (VAR) to test hypothesis H0B. Including AR assumption tests.
 
 * `H0A`
->
+> VAR fit on Historical data using sentiment and stock price as predictors
 
 ## References
 
