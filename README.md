@@ -63,7 +63,23 @@ Another limitation was that the sentiment validation indicated that the automati
 
 Summarizing the findings, a significant historical bidirectional relationship between price and sentiment was found using the VAR model, 
 however the forecasts of the VAR model including sentiment coefficients performed significantly worse than a baseline AR model using sentiment alone.
-Placing the findings in context of previous research,
+Placing the findings in context of previous research [1], an improvement could have been to use a finance domain-specific sentiment dictionary (Loughran–McDonald Financial Dictionary). 
+Their outcomes were better showing that LSTM models indeed performed better using sentiment and price data, as compared to price data alone, which our results did not show. Sentiment was also found to improve stock price predition using a random forest classifier and BERT NLP model for in [2]
+These results were unable to be replicated using a simple VAR model and the vader_lexicon dictionairy that we used.
+This could be due to better sentiment classification using this finance domain-specific dictionairy, or using the LSTM model.
+Also, as assumptions were violated, it seems that the VAR model simply was not a right fit for the data.
+
+
+[1]Li, X., Wu, P., & Wang, W. (2020). Incorporating stock prices and news sentiments for stock market prediction: A case of Hong Kong. Information Processing & Management, 57(5), 102212. https://www.sciencedirect.com/science/article/abs/pii/S0306457319307952
+
+
+[2] Fazlija, B., & Harder, P. (2022). Using Financial News Sentiment for Stock Price Direction Prediction. Mathematics, 10(13), 2156.
+https://www.mdpi.com/2227-7390/10/13/2156
+
+
+
+
+
 
 ## Files
 
