@@ -74,7 +74,7 @@ Placing the findings in context of previous research,
 > Data cleaning of the sentiment, generation of a sentiment timeseries per stock and making the timeseries stationary by taking differences and testing for stationarity by executing Augmented Dickey-Fuller (ADF) tests.
 
 * `Sentiment Analysis`
->
+> 
 
 * `VAR`
 > Prediction of the stock prices using a Vector Autoregressive Model (VAR), with stock price and sentiment as variables. Including assumption VAR tests.
