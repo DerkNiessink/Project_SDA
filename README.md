@@ -31,7 +31,7 @@ The src folder contains all the code of the analysis. All py/ipynb files can be 
 ### Hypotheses
 H0A: There is no relationship between sentiment about a stock in news articles and this stock's price movements.
 
-H0B: Future stock price predictions can not be improved by including news article sentiment about this stock as a predictor
+H0B: Future stock price predictions can not be improved by including news article sentiment about this stock as a predictor.
 
 ### Summary of Research
 
@@ -65,7 +65,7 @@ Summarizing the findings, a significant historical bidirectional relationship be
 however the forecasts of the VAR model including sentiment coefficients performed significantly worse than a baseline AR model using sentiment alone.
 Placing the findings in context of previous research,
 
-### Files
+## Files
 
 * `Stock Timeseries`
 > Data cleaning of the stock price data, generation of a sentiment timeseries per stock and making the timeseries stationary by taking percentage differences and testing for stationarity by executing Augmented Dickey-Fuller (ADF) tests.
@@ -85,7 +85,7 @@ Placing the findings in context of previous research,
 * `H0A`
 >
 
-### References
+## References
 
 For more information about the analysis, please take a look at the presentation slides:
 https://docs.google.com/presentation/d/1Gh-xMdgrWdgvud9PWHqU0W2k2CJ1teHg/edit?usp=sharing&ouid=112006383612537603453&rtpof=true&sd=true
