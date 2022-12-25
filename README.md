@@ -57,7 +57,7 @@ using this sample, significance assumptions and forecast period. Thus we were no
 
 Residuals were plotted to look for a systematic patern in the errors, but clear patern did not emerge across stocks. 
 When (V)AR assumptions were tested, the normality of residuals and constant variance over time were the assumptions failed most often and for some windows, across windows, strong stationarity held for some but was violated for others.
-Limitations of this research were: failed assumptions, only a single forcast window, possible omitted variable bias, and ofcourse the assumption that what was true in the past will hold in the future. 
+Limitations of this research were: failed assumptions (especially 0 autocorrelation of resisduals), only a single forcast window, possible omitted variable bias, and ofcourse the assumption that what was true in the past will hold in the future. 
 Also the fact that the VAR model uses insignificant coefficients to do the forecasting could have limited prediction accuracy. 
 Another limitation was that the sentiment validation indicated that the automatic labeling of the articles was significantly different (although correlated to) the manual labeling. When moving p (the lag order) steps out of sample, VAR model also predicts the next days sentiment, based on its previous predictions. Possibly the model could be improved if it was given actual sentiment as an input data instead.
 
