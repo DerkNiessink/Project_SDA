@@ -88,7 +88,7 @@ Also, as assumptions were violated, it seems that the VAR model simply was not a
 > Prediction of stock prices using an Autoregressive Model (AR) and comparison with the Vector Autoregressive Model (VAR) to test hypothesis H0B. Including AR assumption tests.
 
 * `H0A`
-> VAR fit on Historical data using sentiment and stock price as predictors
+> VAR fit on Historical data using sentiment and stock price as predictors.
 
 ## References
 
